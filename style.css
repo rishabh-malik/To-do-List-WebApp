@@ -16,12 +16,15 @@ header input{
     height:50px;
     float: left;
     background: rgba(255,255,255,0.2);
-    
+    color: #fff;
     border-top-left-radius:5px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius:25px;
     border-top-right-radius: 25px;
     border:0px;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     outline: none;
     box-shadow: none;
     -webkit-appearance: none;
@@ -29,4 +32,8 @@ header input{
     -ms-appearance:none;
     -o-appearance: none;
     appearance: none
+}
+
+header input::-webkit-input-placeholder{
+    color: rgba(255,255,255,0.75)
 }
