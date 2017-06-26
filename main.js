@@ -9,6 +9,16 @@ if(value){
 }
 });
 
+function removeItem(){
+  var item=this.parentNode.parentNode;
+  var parent=item.parentNode;
+  parent.removeChild(item);
+ }
+
+function completed(){
+
+}
+
 function addItemTodo(text){
 var list=document.getElementById('todo');
 
@@ -22,10 +32,12 @@ var item = document.createElement('li');
   var remove = document.createElement('button');
   remove.classList.add('remove');
   remove.innerHTML = dustbin;
+  remove.addEventListener('click',removeItem);
 
-   var complete = document.createElement('button');
+  var complete = document.createElement('button');
   complete.classList.add('complete');
   complete.innerHTML = completeIcon;
+  complete.addEventListener('click',completed);
 
   buttons.appendChild(remove);
   buttons.appendChild(complete);
