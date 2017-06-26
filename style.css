@@ -1,6 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
    background: #edf0f1;
-  padding: 80px 0 0 0;
+  padding: 90px 0 0 0;
 }
 header{
     width: 100%;
@@ -11,7 +15,7 @@ header{
   top: 0;
   left: 0;
   z-index: 5;
-
+  position: absolute;
   background: #25b99a;
   box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
   border-bottom-right-radius: 10px;
@@ -60,10 +64,9 @@ header button{
   -moz-appearance: none;
 }
 
-.container {
-  width: 100%;
-  float: left;
-  padding: 15px;
+ul{
+    margin: 0;
+    padding: 0;
 }
 
 ul.todo {
