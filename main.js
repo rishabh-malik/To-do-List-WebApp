@@ -16,7 +16,12 @@ function removeItem(){
  }
 
 function completed(){
-
+   var item=this.parentNode.parentNode;
+  var parent=item.parentNode;
+  var parentId=parent.id;
+  var target=(parentId=='todo')?document.getElementById('completed'):document.getElementById('todo');
+  parent.removeChild(item);
+  target.appendChild(item);
 }
 
 function addItemTodo(text){
