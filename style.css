@@ -105,6 +105,17 @@ ul.todo li .button button{
     float: left;
     background: none;
     border: 0px;
+    position: relative;
     box-shadow: none;
-    
+
+}
+
+ul.todo li .button button:last-of-type:before{
+    content: '';
+    width: 2px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    background: mediumspringgreen;
 }
