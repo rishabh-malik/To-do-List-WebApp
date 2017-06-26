@@ -91,7 +91,7 @@ ul.todo li {
   word-break: break-word;
 }
 
-ul.todo li .button{
+ul.todo li .buttons{
     width:100px;
     height: 50px;
     position: absolute;
@@ -99,7 +99,7 @@ ul.todo li .button{
     right: 0;
 }
 
-ul.todo li .button button{
+ul.todo li .buttons button{
     width:50px;
     height: 50px;
     float: left;
@@ -110,7 +110,7 @@ ul.todo li .button button{
 
 }
 
-ul.todo li .button button:last-of-type:before{
+ul.todo li .buttons button:last-of-type:before{
     content: '';
     width: 2px;
     height: 30px;
@@ -119,3 +119,4 @@ ul.todo li .button button:last-of-type:before{
     left: 0px;
     background: #25B99A;
 }
+
